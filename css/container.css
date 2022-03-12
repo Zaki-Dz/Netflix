@@ -1,0 +1,37 @@
+/* Start My Container */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	margin: auto;
+}
+
+@media (max-width: 767px){ /* Mobile & Tablet */
+	.container{
+		padding: 0 10px;
+	}
+}
+
+@media (min-width: 768px){ /* Small screens */
+	.container{
+		max-width: 738px;
+	}
+}
+
+@media (min-width: 992px){ /* Medium screens */
+	.container{
+		max-width: 962px;
+	}
+}
+
+@media (min-width: 1200px){ /* Large screens */
+	.container{
+		max-width: 1170px;
+	}
+}
+
+/* End My Container */

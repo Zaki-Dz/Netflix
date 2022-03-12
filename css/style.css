@@ -1,0 +1,162 @@
+body {
+	background-color: #181818;
+	width: 100%;
+	min-height: 100vh;
+	color: white;
+	font-family: verdana;
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-top: 100px;
+	}
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: black;
+	padding: 20px 0;
+}
+
+nav .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .logo {
+	height: 40px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+nav ul .title {
+	text-transform: uppercase;
+}
+
+nav ul .join {
+	padding: 10px;
+	background-color: red;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	text-transform: uppercase;
+}
+
+nav ul .sign {
+	padding: 10px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 3px;
+	color: white;
+	text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+	nav {
+		padding: 10px;
+	}
+
+	nav .container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	nav ul .title {
+		text-transform: uppercase;
+		display: none;
+	}
+
+	nav ul .join {
+		padding: 10px;
+		background-color: red;
+		border: none;
+		border-radius: 3px;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	nav ul .sign {
+		padding: 10px;
+		background-color: transparent;
+		border: 1px solid white;
+		border-radius: 3px;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+
+.text {
+	padding: 100px 0 50px;
+	width: 50%;
+}
+
+.text h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.text p {
+	font-size: 20px;
+	line-height: 2rem;
+}
+
+@media (max-width: 767px) {
+	.text {
+		min-height: 100vh;
+		padding: 100px 0 50px;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.list {
+	margin-bottom: 50px;
+}
+
+.list h1 {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+	.list h1 {
+		text-align: center;
+	}
+}
+
+.list .movies {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+	align-items: flex-start;
+	margin-bottom: 50px;
+}
+
+.list .movies:hover .btn {
+	opacity: 1;
+}
+
+.list .movies::-webkit-scrollbar {
+	display: none;
+}
+
+.list .movie {
+	width: 300px;
+	flex-shrink: 0;
+}
+
+.list .movie img {
+	width: 100%;
+}
+
+.list .movie p {
+	text-align: center;
+}

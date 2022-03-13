@@ -1,2 +1,1 @@
-Website :
-zaki-dz.github.io/Netflix
+[Website](zaki-dz.github.io/Netflix)
